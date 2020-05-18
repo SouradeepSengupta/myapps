@@ -1,28 +1,25 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="vehicles.list">
-      <field name="name">vehicles list</field>
+    <record model="ir.ui.view" id="vehicles.vehicles_list">
+      <field name="name">Vehicles list</field>
       <field name="model">vehicles.vehicles</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree string="Vehicles">
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="company"/>
+          <field name="registration_number"/>
+          <field name="need_servicing"/>
         </tree>
       </field>
     </record>
-    -->
 
     <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="vehicles.action_window">
-      <field name="name">vehicles window</field>
+    <record model="ir.actions.act_window" id="vehicles.vehicles">
+      <field name="name">Vehicles</field>
       <field name="res_model">vehicles.vehicles</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
 
     <!-- server action to the one above -->
     <!--
@@ -41,18 +38,14 @@
     -->
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="vehicles" id="vehicles.menu_root"/>
-    -->
+    <menuitem name="Vehicles" id="vehicles.menu_root" web_icon="vehicles,static/vehicles.jpeg"/>
     <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="vehicles.menu_1" parent="vehicles.menu_root"/>
-    <menuitem name="Menu 2" id="vehicles.menu_2" parent="vehicles.menu_root"/>
-    -->
+
+    <menuitem name="Vehicles" id="vehicles.menu_1" parent="vehicles.menu_root" action="vehicles.vehicles"/>
     <!-- actions -->
     <!--
     <menuitem name="List" id="vehicles.menu_1_list" parent="vehicles.menu_1"
-              action="vehicles.action_window"/>
+              />
     <menuitem name="Server to list" id="vehicles" parent="vehicles.menu_2"
               action="vehicles.action_server"/>
     -->

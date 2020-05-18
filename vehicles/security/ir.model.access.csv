@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_vehicles_vehicles,vehicles.vehicles,model_vehicles_vehicles,,1,0,0,0
+access_vehicles_vehicles,access_vehicles_vehicles,model_vehicles_vehicles,base.group_user,1,1,1,1
