@@ -7,7 +7,8 @@ class vehicles(models.Model):
     _name = 'vehicles.vehicles'
 
     name = fields.Char()
-    company = fields.Char()
+    company = fields.Many2one('vehicles.company')
+    owner = fields.Many2one('res.partner')
     price = fields.Integer()
     registration_number = fields.Char()
     date_of_registration = fields.Date()

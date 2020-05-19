@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem name="Vehicles" id="vehicles.menu_root" web_icon="vehicles,static/images/vehicles.jpeg"/>
+
+    <!-- menu categories -->
+    <menuitem name="Vehicles" id="vehicles.menu_1" parent="vehicles.menu_root" action="vehicles_list"/>
+    <menuitem name="Companies" id="vehicles.menu_2" parent="vehicles.menu_root" action="companies_list"/>
+    <menuitem name="Owners" id="vehicles.menu_3" parent="vehicles.menu_root" action="owners_list"/>
+</odoo>

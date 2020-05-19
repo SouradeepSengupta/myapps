@@ -1,0 +1,36 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="owners_list">
+      <field name="name">Owners</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="vehicles.action_server">
+      <field name="name">vehicles server</field>
+      <field name="model_id" ref="model_vehicles_vehicles"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="vehicles.menu_1_list" parent="vehicles.menu_1"
+              />
+    <menuitem name="Server to list" id="vehicles" parent="vehicles.menu_2"
+              action="vehicles.action_server"/>
+    -->
+  </data>
+</odoo>

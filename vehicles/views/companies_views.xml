@@ -1,23 +1,21 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="vehicles.vehicles_list">
-      <field name="name">Vehicles list</field>
-      <field name="model">vehicles.vehicles</field>
+    <record model="ir.ui.view" id="vehicles_companies_list">
+      <field name="name">Companies list</field>
+      <field name="model">vehicles.company</field>
       <field name="arch" type="xml">
-        <tree string="Vehicles">
+        <tree string="Companies">
           <field name="name"/>
-          <field name="company"/>
           <field name="registration_number"/>
-          <field name="need_servicing"/>
         </tree>
       </field>
     </record>
 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="vehicles.vehicles">
-      <field name="name">Vehicles</field>
-      <field name="res_model">vehicles.vehicles</field>
+    <record model="ir.actions.act_window" id="companies_list">
+      <field name="name">Companies</field>
+      <field name="res_model">vehicles.company</field>
       <field name="view_mode">tree,form</field>
     </record>
 
@@ -38,10 +36,7 @@
     -->
 
     <!-- Top menu item -->
-    <menuitem name="Vehicles" id="vehicles.menu_root" web_icon="vehicles,static/vehicles.jpeg"/>
-    <!-- menu categories -->
 
-    <menuitem name="Vehicles" id="vehicles.menu_1" parent="vehicles.menu_root" action="vehicles.vehicles"/>
     <!-- actions -->
     <!--
     <menuitem name="List" id="vehicles.menu_1_list" parent="vehicles.menu_1"
