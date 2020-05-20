@@ -14,3 +14,4 @@ class vehicles(models.Model):
     date_of_registration = fields.Date()
     description = fields.Text()
     need_servicing = fields.Boolean("Needs servicing ?")
+    servicing = fields.Many2many('vehicles.servicing')

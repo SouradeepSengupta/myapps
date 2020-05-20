@@ -8,3 +8,4 @@ class vehicles_owner(models.Model):
 
     demo_done = fields.Boolean()
     sales_person = fields.Many2one('res.users')
+    vehicles = fields.One2many('vehicles.vehicles', 'owner')

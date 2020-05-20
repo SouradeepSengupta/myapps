@@ -28,6 +28,7 @@
         'views/vehicles_views.xml',
         'views/companies_views.xml',
         'views/owners_views.xml',
+        'views/servicing_views.xml',
         'views/vehicles_menu.xml',
         'views/templates.xml',
     ],
